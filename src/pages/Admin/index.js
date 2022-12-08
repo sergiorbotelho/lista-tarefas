@@ -13,7 +13,7 @@ import {
   deleteDoc, 
   updateDoc
 } from 'firebase/firestore'
-
+import { toast } from 'react-toastify';
 function Admin() {
 
 
@@ -27,7 +27,7 @@ function Admin() {
     async function loadTarefas() {
       const userDetail = localStorage.getItem("@detailUser");
       setUser(JSON.parse(userDetail));
-
+      
       if (userDetail) {
         const data = JSON.parse(userDetail);
 
@@ -53,6 +53,7 @@ function Admin() {
 
 
     loadTarefas();
+    
   }, [])
 
   async function handleRegister(e) {
@@ -74,6 +75,7 @@ function Admin() {
       .then(() => {
         console.log("TAREFA REGISTRADA");
         setTarefaInput('')
+        toast.success('Tarefa adicionada.')
       })
       .catch((error) => {
         console.log("ERRO AO REGISTRAR " + error);
@@ -87,6 +89,7 @@ function Admin() {
   async function deleteTarefa(id) {
     const docRef = doc(db, 'tarefas', id);
     await deleteDoc(docRef);
+    toast.success('Tarefa concluída')
   }
   async function updateTarefa(item) {
     setTarefaInput(item.tarefa);
@@ -100,6 +103,7 @@ function Admin() {
     .then(()=>{
       setEdit({});
       setTarefaInput('');
+      toast.success('Tarefa atualizada')
     })
     .catch((error)=>{
       console.log("Erro ao editar: " + error);
