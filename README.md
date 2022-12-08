@@ -1,3 +1,18 @@
+https://listatarefas-sergiobotelho.vercel.app/
+
+### Descrição da página
+
+Página de tarefas, com autenticação, criação de usuário pelo firebase, banco de dados firestore do firebase, rotas de admin, edição e exclusão das tarefas.  
+
+![Screenshot_1](https://user-images.githubusercontent.com/71743953/206341637-cc398455-8521-4699-a968-fa2838c18a07.jpg)
+
+![Screenshot_2](https://user-images.githubusercontent.com/71743953/206341648-77129c5b-e6da-42dc-986e-43df012858c4.jpg)
+
+## 🛠️ Construído com
+
+* [React](https://pt-br.reactjs.org/) - Framework
+* [Firebase](https://firebase.google.com/) - Realtime Firestore e Authentication
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +83,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+⌨️ com ❤️ por [Sérgio Botelho](https://github.com/sergiorbotelho) 😊
